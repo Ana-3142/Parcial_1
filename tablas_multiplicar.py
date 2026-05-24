@@ -73,54 +73,12 @@ num_tabla=int(input("Dame un numero para obtener la tabla de multiplicar: "))
 for num in range(1,11):
   multi=num_tabla* num
   print(f"{num_tabla} X {num} = {multi} ")
-
-
-
-
-
-
-
-
-
-
-'''
-  Crear un programa que calcule e imprima cualquier tabla de multiplicar
-
-  Restricciones: 
-  1.- Con estructuras de control con for con decrementos de 10
-  2.- Sin funciones
-
-'''
-print("\033c")
-
-num_tabla=int(input("Dame un numero para obtener la tabla de multiplicar: "))
-
 num=1
-for i in range(100,0,-10):
+while num<=10:
   multi=num_tabla* num
   print(f"{num_tabla} X {num} = {multi} ")
   num+=1
 
-
-
-
-
-
-
-
-
-'''
-While
-
-'''
-print("\033c")
-
-i=100
-while i>10:
-  multi=num_tabla* num
-  print(f"{num_tabla} X {num} = {multi} ")
-  num+=1
-  i-=10
 
 
 
@@ -174,3 +132,15 @@ num=tabla(num_tabla,num)
   2.- Con funciones
 
 '''
+print("\033c")
+
+def tabla(num_tab,n):
+    mul=num_tab*n
+    print(f"{num_tab} x {n}  = {mul} ")
+    n+=1
+    return n
+  
+num_tabla=int(input("Dame un numero para obtener la tabla de multiplicar:  "))
+
+for num in range(1,11):
+  num=tabla(num_tabla,num)
