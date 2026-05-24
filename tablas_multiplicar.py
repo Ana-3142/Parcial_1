@@ -124,6 +124,7 @@ num=tabla(num_tabla,num)
 
 
 
+
 '''
   Crear un programa que calcule e imprima cualquier tabla de multiplicar
 
